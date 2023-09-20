@@ -1,0 +1,401 @@
+body {
+    background: #FFF8EA;
+    overflow: hidden;
+    line-height: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 10%;
+}
+
+.navbar .navbar-left {
+    position: relative;
+    width: 288px;
+
+}
+
+.navbar .navbar-left .circle {
+    position: absolute;
+    background-color: #fff;
+    width: 130px;
+    height: 110px;
+    border-radius: 50%;
+    z-index: -1;
+    left: -10%;
+    top: -40%;
+}
+
+.navbar-left a img {
+    width: 60px;
+    height: auto;
+    margin: 7% 0 0 7%;
+}
+
+.navbar-right {
+    position: relative;
+    width: 450px;
+    overflow: hidden;
+
+}
+
+.navbar-right img {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: 10%;
+}
+
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+
+}
+
+.footer-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding-left: 15px;
+}
+
+.footer-left p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #000;
+
+
+}
+
+.footer-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    padding-bottom: 50px;
+    padding-right: 10px;
+}
+
+.card {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper {
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.swiper-slide {
+    width: 300px !important;
+    height: 550px !important;
+    text-align: center;
+    font-size: 15px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.swiper-slide:last-child {
+    margin-right: 30px;
+}
+
+
+.swiper-slide img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+/* çizikler */
+.swiper-slide::before {
+    content: '';
+    width: 30px;
+    border-bottom: 2px solid #E9D29E;
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    left: -25px;
+}
+
+.swiper-slide::after {
+    content: ' ';
+    width: 50px;
+    border-radius: 2px solid #E9D29E;
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    right: -15%;
+}
+
+
+#foto1 {
+    margin: auto;
+    width: 90%;
+    height: 100px;
+    padding-top: 4px;
+}
+
+.lorem1 {
+    font: normal normal bold 20px/25px Playfair Display;
+}
+
+#fuar {
+    margin: 15px 0 5px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.fuar {
+    width: 50px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.lorem1-border {
+    width: 120px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.card2>img {
+    position: absolute;
+
+}
+
+.lorem2 {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5px;
+}
+
+.fuar-date {
+    margin-bottom: 10px;
+}
+
+.button1 {
+    width: 120px;
+    height: 25px;
+    background-color: transparent;
+    font-family: 'poppins', sans-serif;
+    border: 1px solid #000000;
+    border-radius: 21px;
+    margin: 60px 0;
+}
+
+.card1 button,
+.card6 button {
+    position: relative;
+    bottom: 40px;
+}
+
+.number {
+    position: absolute;
+    bottom: -30px;
+    z-index: -100;
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.card4 img {
+    width: 90% !important;
+    height: 40% !important;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card4 p {
+    margin: 15px;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.card5 {
+    background-color: transparent;
+    width: 900px !important;
+    height: 530px !important;
+}
+
+.card5 img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+
+}
+
+.card5 .swiper-bg {
+    background-color: transparent;
+}
+
+.ortala {
+    width: 80% !important;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card3 .ortala {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ortala img {
+    width: 100% !important;
+}
+
+.swiper-bg {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.swiper-pagination {
+    bottom: 20px !important;
+    position: absolute;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: #000;
+    opacity: 0.25;
+    padding: 2px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 10px !important;
+}
+
+
+
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+@media (max-width:768px) {
+    .swiper-pagination {
+        display: none !important;
+    }
+
+    .swiper-slide {
+        width: 100% !important;
+    }
+
+}
+
+/* siyahlıklar */
+.img-shadow {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    box-shadow: inset 0px -100px 61px -24px rgba(0, 0, 0, 1);
+    bottom: 0;
+}
+
+/* oynatma */
+.card2 .play {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90%;
+}
+
+.card2 .play img {
+    width: 15px !important;
+    height: 20px !important;
+    margin-left: 4px;
+}
+
+.item2 {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 250px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sergi {
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+}
+
+.sergi-border {
+    margin: 10px 0;
+    width: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.item2-lorem2 {
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+}
+
+.button2 {
+    width: 120px;
+    height: 25px;
+    background-color: transparent;
+    font-family: 'poppins', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 21px;
+    font-size: 15px;
+    color: white;
+
+}

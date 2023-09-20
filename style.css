@@ -6,8 +6,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-
-
+    position: relative;
 }
 
 .navbar {
@@ -29,7 +28,7 @@ body {
     position: absolute;
     background-color: #fff;
     width: 170px;
-    height: 170px;
+    height: 150px;
     border-radius: 50%;
     z-index: -1;
     left: -15%;
@@ -39,7 +38,7 @@ body {
 .navbar-left a img {
     width: 80px;
     height: auto;
-    margin: 10% 0 0 10%;
+    margin: 7% 0 0 7%;
 }
 
 .navbar-right {
@@ -61,6 +60,59 @@ body {
     height: 100%;
     position: relative;
     overflow: hidden;
+}
+
+/* sag üst resim */
+.container::before {
+    content: ' ';
+    position: absolute;
+    background-image: url(image/Group\ 5960.svg);
+    background-repeat: no-repeat;
+    width: 27%;
+    height: 149%;
+    top: -43em;
+    right: 0;
+
+}
+
+.container::after {
+    content: ' ';
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    bottom: -250px;
+    left: -350px;
+    background-image: url(image/Group\ 5960.svg);
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:760px) {
+    .container::after {
+        display: none;
+    }
+
+    .container::before {
+        display: none;
+    }
+
+    .footer-left {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-right {
+        display: none !important;
+    }
+
+    .container-next {
+        visibility: hidden;
+    }
+
+    .buttons {
+        margin-top: 2%;
+    }
 }
 
 
@@ -216,7 +268,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     color: #000;
-
 }
 
 .footer-right {
@@ -226,4 +277,21 @@ body {
     align-items: start;
     justify-content: end;
     padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width:1440px) {
+    .container::after {
+        bottom: -300px;
+        left: -300px;
+    }
+}
+
+@media screen and(min-width:2048px) {
+    .container::before {
+        bottom: -300px;
+        left: -300px;
+    }
+
 }
