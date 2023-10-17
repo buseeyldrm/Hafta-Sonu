@@ -327,6 +327,13 @@ body {
         width: 100% !important;
     }
 
+    .footer-right {
+        display: none;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
 }
 
 /* siyahlıklar */
